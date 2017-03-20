@@ -58,42 +58,73 @@ title: atom windows 常用快捷键
 
 
 ## 【Editor】编辑文本
-### 基本操作
+### 行操作
+`ctrl-g` 跳转到指定行数  
 `ctrl-j` 将下一行与当前行合并  
+`ctrl-l` 选择行  
+`ctrl-enter` 下一行新建一行  
+`ctrl-shift-enter` 上一行新建一行  
 `ctrl-up` 使当前行向上  
 `ctrl-down` 使当前行向下移动  
 `ctrl-shift-d` 复制当前行到下一行  
 `ctrl-shift-k` 删除当前行  
+`shift-delete` 剪切当前行  
+`home` 光标移动到行首  
+`end` 光标移动到行尾  
+`shift-home` 选中到行首  
+`shift-end` 选中到行尾  
+
+### 多行合并和格式化
+`ctrl-j` 将下一行与当前行合并  可选取多行后合并为一行  
+`ctrl-shift-q` reflow功能 重新flow选中的内容默认每行80个字符，不是合并为一行  
+`ctrl-alt-b` beautify插件的格式化功能
+
+### 大小写转换  
 `ctrl-k ctrl-u` 使当前字符大写  
 `ctrl-k ctrl-l` 使当前字符小写  
 
-### 删除和剪切
-`ctrl-shift-K` 删除当前行  
-`ctrl-backspace` 删除到当前行开始  
-`ctrl-K` 剪切到当前行结束  
-`alt-backspace` 或 `alt-H` 删除到当前单词开始  
-`alt-delete` 或 `alt-D` 删除到当前单词结束  
+### 光标移动选取
+`shift-up` 向上选取一行  
+`shift-down` 向下选取一行   
+`shift-left` 向左选取一个字符  
+`shift-right` 向右选取一个字符  
+`shift-home` 选中到行首  
+`shift-end` 选中到行尾  
+`shift-pageup` 向上选取一页   
+`shift-pagedown` 向下选取一页  
+`ctrl-home` 光标移动到页首  
+`ctrl-end` 光标移动到页尾  
+`ctrl-shift-home` 光标选取到页首  
+`ctrl-shift-end` 光标选取到页尾  
+`alt-shift-left` 向左选取一个子单词  
+`alt-shift-right` 向右选取一个子单词  
+`ctrl-shift-left` 向左选取一个单词  
+`ctrl-shift-right` 向右选取一个单词  
 
 ### 多光标和多处选取  
-`ctrl-click` 增加新光标   
 `ctrl-alt-up` editor:add-selection-above  
 `ctrl-alt-down` editor:add-selection-below  
-`alt-shift-left` editor:move-selection-left  
-`alt-shift-right` editor:move-selection-right  
-`ctrl-d` 选取文档中和当前单词相同的下一处  
+
+### 删除
+`ctrl-shift-K` 删除当前行  
+`ctrl-backspace` 删除到当前单词开始(以空格或符合区分单词)  
+`ctrl-delete` 删除到当前单词结束  
+`alt-backspace` 删除到当前子单词开始(以首字母大小写区分子单词)  
+`alt-delete` 删除到当前子单词结束  
 
 ### 编码方式  
 `ctrl-shift-u` 调出切换编码选项  
 
 ## 【Find & Replace】查找和替换  
 `ctrl-f` 在buffer中查找  
-`ctrl-shift-f` 在整个工程中查找  
+`ctrl-shift-f` 在整个工程中查找
+`ctrl-d` 选取文档中和当前单词相同的下一处   
 
 
 ## 【Flod & UnFlod】折叠展开代码块  
 `ctrl-alt-[`	editor:fold-current-row  
 `ctrl-alt-]`	editor:unfold-current-row  
-`ctrl-alt-{`	editor:fold-all  
+`ctrl-alt-{`    editor:fold-all  
 `ctrl-alt-}`	editor:unfold-all  
 
 `ctrl-k ctrl-0`	editor:unfold-all  
